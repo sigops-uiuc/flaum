@@ -1,5 +1,5 @@
 # flaum
-OS targetting the raspberri pi 3.
+OS targetting the raspberry pi 3.
 
 # Build
 * Requirements: the llvm toolchain (currently using clang, lld)
