@@ -1,5 +1,7 @@
 #include <stddef.h>
 #include <stdint.h>
+
+#include "paging.h"
  
 // board type, raspi2
 int raspi = 2;
@@ -133,6 +135,7 @@ void kernel_main(uint32_t r0, uint32_t r1, uint32_t atags)
  
 	uart_init();
 	uart_puts("Hello, kernel World!\r\n");
+	init_pages();
  
 	while (1)
 		uart_putc(uart_getc());
